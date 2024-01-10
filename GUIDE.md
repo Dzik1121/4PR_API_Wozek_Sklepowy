@@ -1,11 +1,9 @@
-# goShop Backend
+# Zapytania
 
-## A simple backend made to be used for a school project
-
-### * User creation * 
+### *Stwórz Konto* 
 
 ---
->To create a user, send a request to '/api/createUser' that looks like this
+>Aby stworzyć konto, wyślij zapytanie '/api/createUser' używając schematu:
 ```
 {
   "Login": "your_username",
@@ -14,7 +12,7 @@
 }
 
 ```
->And it will return something like this (PS. Save this as a cookie as you'll use it for actions)
+>Powinno zwrócić:
 ```
 {
   "Login": "john_doe",
@@ -24,17 +22,17 @@
 }
 
 ```
-### User login
+### *Logowanie się do Konta*
 
 ---
->To login a user,send a request to '/api/loginUser' that looks like this
+>Aby zalogować się do konta, wyślij zapytanie '/api/loginUser' używając schematu:
 ```
 {
   "Login": "john_doe",
   "Password": "secretpassword"
 }
 ```
->and it will return something like this
+>Powinno zwrócić:
 ```
 {
  "Login": "john_doe",
@@ -43,10 +41,10 @@
  "Basket": []
 }
 ```
-### * User deletion*
+### *Usuwanie Konta*
 
 ---
-> To delete a user,send a request to '/api/deleteUser' that looks like this
+>Aby usunąć konto, wyślij zapytanie '/api/deleteUser' używając schematu:
 ```
 
 {
@@ -57,18 +55,18 @@
 }
 
 ```
->And it will return something like this
+>Powinno zwrócić:
 ```
 {
   "message": "User data deleted successfully"
 }
 
 ```
-### *Add to user basket*
+### *Dodaj produkt do koszyka*
 
 ---
 
-> To add to  a user's basket,send a request to '/api/addToBasket' that looks like this
+>Aby dodać produkt do koszyka, wyślij zapytanie '/api/addToBasket' używając schematu:
  ```
  {
   "Login": "john_doe",
@@ -78,11 +76,11 @@
   "Product_id": "cpu123"
 }
  ```
-### Remove from basket
+### *Usuń produkt z koszyka*
 
 ---
 
->To remove from a user's basket send a request to '/api/removeBaskets' that looks like this where 'ProductId' is the id of the product to be removed.
+>Aby usunąć produkt z koszyka, wyślij zapytanie '/api/removeBaskets' używając schematu, gdzie 'ProductId' jest Id produktu, który chcemy usunąć:
 ```
 {
   "Login": "example_user",
@@ -106,34 +104,12 @@
 
 ```
 
-### *Get product's*
+### *Wyświetl produkty*
 
 
 ---
 
-> To get products send a GET request to '/api/getProducts',you will get a response like this
-```
-[
-  {
-    "Id": 1,
-    "Name": "Product A",
-    "Price": 19.99,
-  },
-  {
-    "Id": 2,
-    "Name": "Product B",
-    "Price": 29.99,
-  },
-  {
-    "Id": 3,
-    "Name": "Product C",
-    "Price": 9.99,
-  }
-]
-
-```
-
-> You will get something like this
+>Aby wyświetlić produkty, wyślij zapytanie z GET '/api/getProducts'. Powinno zwrócić:
 ```
 [
   {
