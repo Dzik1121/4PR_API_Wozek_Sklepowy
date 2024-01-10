@@ -1,0 +1,13 @@
+{
+    "Login": "Damian",
+    "Password": "",
+    "Email": "john.doe@example.com",
+    "ID": "Damian-251f765e7b59cad17c8bdae6f71705020292f246dacddc8f65cbb3cc4b8e3384",
+    "Basket": [
+        {
+            "Id": "ssd202",
+            "Price": 150,
+            "Name": "Samsung 970 EVO Plus 500GB"
+        }
+    ]
+}

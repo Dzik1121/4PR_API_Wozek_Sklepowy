@@ -1,0 +1,13 @@
+{
+    "Login": "Ola",
+    "Password": "",
+    "Email": "Ola123@gmail.com",
+    "ID": "Ola-f21d8a4f1f93e8abd047bc92fc4f36be7a1a17da212c3833480466db2f192e6e",
+    "Basket": [
+        {
+            "Id": "cpu123",
+            "Price": 300,
+            "Name": "Intel Core i7"
+        }
+    ]
+}
